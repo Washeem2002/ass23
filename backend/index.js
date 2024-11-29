@@ -6,7 +6,7 @@ const taskRoutes = require("./routes/taskRoutes");
 const path=require('path'); 
 
 const app = express();
-const PORT = 5001;
+const PORT = process.env.PORT || 3001;;
 const url='mongodb+srv://kadrunnisha2:nTgxCdip3Ec5rRSM@intenship.oqexe5i.mongodb.net/Peakfloass?retryWrites=true&w=majority&appName=intenship'
 // Middleware
 app.use(cors());
